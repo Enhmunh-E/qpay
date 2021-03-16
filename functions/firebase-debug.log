@@ -7996,3 +7996,41 @@ INFO: Detected non-HTTP/2 connection.
 [debug] [2021-03-13T06:53:52.370Z] Mar 13, 2021 2:53:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
  {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 13, 2021 2:53:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-03-13T06:54:52.388Z] Mar 13, 2021 2:54:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 13, 2021 2:54:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-03-13T06:55:04.048Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[debug] [2021-03-13T06:55:04.055Z] Ignoring signal SIGHUP due to short delay of 7ms
+[debug] [2021-03-13T06:55:04.056Z] [worker-~diagnostic~-60c78d9f-57a0-4309-bcb1-02e47ede80d7]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-60c78d9f-57a0-4309-bcb1-02e47ede80d7]: exited"}}
+[debug] [2021-03-13T06:55:04.056Z] [worker-~diagnostic~-60c78d9f-57a0-4309-bcb1-02e47ede80d7]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-60c78d9f-57a0-4309-bcb1-02e47ede80d7]: FINISHED"}}
+[debug] [2021-03-13T06:55:04.056Z] [worker-EnkhmunkhCheckOut-01791baa-14ea-4058-b042-1156690ebfc8]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-EnkhmunkhCheckOut-01791baa-14ea-4058-b042-1156690ebfc8]: exited"}}
+[debug] [2021-03-13T06:55:04.056Z] [worker-EnkhmunkhCheckOut-01791baa-14ea-4058-b042-1156690ebfc8]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-EnkhmunkhCheckOut-01791baa-14ea-4058-b042-1156690ebfc8]: FINISHED"}}
+[debug] [2021-03-13T06:55:04.056Z] [worker-EnkhmunkhCreateInvoice-e919543e-ccd8-4498-89e2-3945c02498e0]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-EnkhmunkhCreateInvoice-e919543e-ccd8-4498-89e2-3945c02498e0]: exited"}}
+[debug] [2021-03-13T06:55:04.056Z] [worker-EnkhmunkhCreateInvoice-e919543e-ccd8-4498-89e2-3945c02498e0]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-EnkhmunkhCreateInvoice-e919543e-ccd8-4498-89e2-3945c02498e0]: FINISHED"}}
+[warn] ⚠  Emulator UI has exited upon receiving signal: SIGINT 
+[debug] [2021-03-13T06:55:04.059Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at WriteStream.Socket._writeGeneric (node:net:773:11)
+    at WriteStream.Socket._write (node:net:785:8)
+    at writeOrBuffer (node:internal/streams/writable:395:12)
+    at WriteStream.Writable.write (node:internal/streams/writable:340:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:390:22)
+    at DerivedLogger.EventEmitter.emit (node:domain:470:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  functions: Waiting for all functions to finish... {"metadata":{"emulator":{"name":"functions"},"message":"Waiting for all functions to finish..."}}

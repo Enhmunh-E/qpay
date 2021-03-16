@@ -1,0 +1,78 @@
+[debug] [2021-03-16T10:49:23.381Z] ----------------------------------------------------------------------
+[debug] [2021-03-16T10:49:23.383Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions:EnkhmunkhcreateInvoice
+[debug] [2021-03-16T10:49:23.383Z] CLI Version:   9.6.0
+[debug] [2021-03-16T10:49:23.383Z] Platform:      darwin
+[debug] [2021-03-16T10:49:23.383Z] Node Version:  v15.10.0
+[debug] [2021-03-16T10:49:23.384Z] Time:          Tue Mar 16 2021 18:49:23 GMT+0800 (Ulaanbaatar Standard Time)
+[debug] [2021-03-16T10:49:23.384Z] ----------------------------------------------------------------------
+[debug] [2021-03-16T10:49:23.384Z] 
+[debug] [2021-03-16T10:49:23.391Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-16T10:49:23.391Z] > authorizing via signed-in user
+[debug] [2021-03-16T10:49:23.391Z] [iam] checking project app-1-56fa0 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2021-03-16T10:49:23.393Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-16T10:49:23.393Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-16T10:49:24.147Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Tue, 16 Mar 2021 10:49:24 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-16T10:49:24.170Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/app-1-56fa0:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2021-03-16T10:49:25.830Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Mar 2021 10:49:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=819","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-16T10:49:25.831Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/app-1-56fa0/serviceAccounts/app-1-56fa0@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2021-03-16T10:49:27.969Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Mar 2021 10:49:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'app-1-56fa0'...
+[info] 
+[info] i  deploying functions 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2021-03-16T10:49:29.462Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/app-1-56fa0/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2021-03-16T10:49:29.463Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/app-1-56fa0/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2021-03-16T10:49:29.463Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/app-1-56fa0/services/cloudbuild.googleapis.com  
+ 
+[debug] [2021-03-16T10:49:30.832Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Mar 2021 10:49:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-16T10:49:30.913Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Mar 2021 10:49:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2021-03-16T10:49:30.922Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Mar 2021 10:49:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2021-03-16T10:49:30.923Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/app-1-56fa0/adminSdkConfig  
+ 
+[debug] [2021-03-16T10:49:32.112Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Mar 2021 10:49:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: preparing functions directory for uploading... 
+[debug] [2021-03-16T10:49:32.113Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/app-1-56fa0/configs  
+ 
+[debug] [2021-03-16T10:49:32.533Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Mar 2021 10:49:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: packaged functions (46.44 KB) for uploading 
+[debug] [2021-03-16T10:49:32.919Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2021-03-16T10:49:32.920Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/app-1-56fa0/locations/-/functions  
+ 
+[debug] [2021-03-16T10:49:33.805Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Mar 2021 10:49:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-16T10:49:33.807Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/app-1-56fa0/locations/us-central1/functions:generateUploadUrl  
+ 
+[debug] [2021-03-16T10:49:35.399Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 16 Mar 2021 10:49:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-16T10:49:35.399Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-554be537-06d4-44f6-b097-a277d779df67/3a669752-ca3c-4931-af81-cc2250bb2f3c.zip?GoogleAccessId=service-3715170376@gcf-admin-robot.iam.gserviceaccount.com&Expires=1615893575&Signature=UYn9HP%2BbKK5rM18Dconvz8u0tHXbMCv%2Fca6a9QoUgEt0wg9ta26cuzxApGizaMjSRKfXZNAxNzy1wcdcjNC5qTAorN3rVTuUhnnoRCbsRsPA4ZnRIS5j%2BouK3uuO72cNtiIWnJKWZA4uYheEoGPKycP5Tkr4AIWfREtCLKh9%2Bljnv3P9YN9pqiVHo%2FG1RA9muCKQ6aOo4I14%2B2YkTqHMSeihgFll2%2BuzVsilX%2Bkib%2BWDvpgylvNymYg9njgx4sCUuwznqM3RpnckD7j8UVzTDgk1mcnL3QHwKkFyeaCEZ6wWLyZflwugxhQQvxP%2FnLn7LnLksJ5fDv%2BuYXqmoKQt5A%3D%3D  
+ <request body omitted>
